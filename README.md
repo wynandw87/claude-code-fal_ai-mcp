@@ -440,13 +440,6 @@ This MCP server uses the official `@fal-ai/client` SDK to communicate with fal.a
 
 ---
 
-## Development
-
-```text
-npm run build    # Build for production
-npm start        # Start production server
-```
-
 ## Troubleshooting
 
 ### Fix API Key
@@ -478,14 +471,11 @@ If not listed, follow Step 3 to install it.
    node --version
    ```
 
-3. **Ensure the server was built:**
-   ```text
-   npm run build
-   ```
+3. **Ensure the server was built** — if `dist/index.js` is missing, run `npm install` again
 
 ### Connection Errors
 
-1. **Check that `dist/index.js` exists** — if not, run `npm run build`
+1. **Check that `dist/index.js` exists** — if not, run `npm install`
 2. **Verify the path is absolute** in your `claude mcp add` command
 3. **Restart Claude Code** after any configuration changes
 
