@@ -1,0 +1,59 @@
+{
+  "name": "fal-ai-mcp-server",
+  "version": "1.0.0",
+  "description": "fal.ai MCP server providing image generation, video generation, image/video utilities, audio/music generation, and 3D model creation for Claude Code",
+  "main": "dist/index.js",
+  "bin": {
+    "fal-ai-mcp-server": "dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepare": "npm run build",
+    "postinstall": "node scripts/postinstall.js",
+    "install:claude": "node scripts/install-claude-code.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "fal-ai",
+    "fal",
+    "ai",
+    "claude-code",
+    "image-generation",
+    "video-generation",
+    "flux",
+    "kling",
+    "3d",
+    "upscaling",
+    "music"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wynandw87/claude-code-fal_ai-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wynandw87/claude-code-fal_ai-mcp/issues"
+  },
+  "homepage": "https://github.com/wynandw87/claude-code-fal_ai-mcp#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@fal-ai/client": "^1.2.0",
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}
